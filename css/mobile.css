@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+
+:root {
+    --Blanc: #ffffff;
+    --Noir: #000000;
+    --Orange: #ff6347;
+    --orange-dark: #c7381f;
+    --Gris: #797878;
+    --Gris-clair: #d9d7d7;
+  }
+
+*{
+    font-family: 'Arvo', sans-serif;
+    font-size: 1rem;
+}
+
+/* HEADER */
+header section{
+    background-image: url('../images/hero-image.jpg');
+    background-size: cover;
+}
+
+.btn-primary{
+    background-color: var(--Orange);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange-dark);
+    border: none;
+}
+
+/* MAIN */
+.text-orange{
+    color: var(--Orange);
+}
+
+.separator{
+    border-bottom: 1px solid var(--Orange);
+    width: 130px;
+    margin: auto;
+}
+
+.btn-light{
+    background-color: var(--Blanc);
+    color: var(--Orange);
+    border: 1px solid var(--Gris-clair);
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: var(--Noir);
+    border-radius: 50%;
+    margin: 60px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img{
+    filter: invert(100%);
+    width: 65px;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--Orange);
+    padding: 150px 0 30px 0;
+}
+
+footer img{
+    width: 90%;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    /* Modification de la classe BS pour le rendu Desktop */
+    /* ordre de priorité : ID ==> class ==> html */
+    .w-75 {
+        width: 50% !important;
+    }
+
+    footer img{
+        width: auto;
+    }
+}
